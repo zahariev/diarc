@@ -9,8 +9,8 @@ const Decks: Deck[] = [
     color: "#d4412d",
     backSide: false,
     empty: false,
-    accentIcons: [0, 1, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14],
-    accentColor: "whitesmoke",
+    accentIcons: [6, 19, 20, 24, 33, 34, 36, 41, 42, 44, 46, 50],
+    accentColor: "white",
     iconColor: "black",
   },
 ];
