@@ -70,8 +70,8 @@ export class CardComponent implements OnInit {
 
     if (!elStyle.position) {
       card.position = {
-        x: el.left,
-        y: el.top - 60,
+        x: el.left + window.scrollX,
+        y: el.top - 60 + window.scrollY,
       };
     }
     this.gs.dropCard.emit();
