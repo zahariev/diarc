@@ -26,6 +26,25 @@ footer a {
     z-index: 99999;
   }
 
+  #logo_mcc {
+    min-width: 250px;
+    background-image: url("logos/mcc.png");
+  }
+
+  #logo_erasmus {
+    width: 250px;
+    margin-right: 40px;
+    height: 50px;
+    background-image: url("logos/erasmus_logo.png");
+  }
+
+  #logo_national {
+    margin-left: 10px;
+    min-width: 220px;
+    min-height: 60px;
+    background-image: url("logos/national.png");
+  }
+
   #logo_diarc {
     display: inline-block;
     width: 70px;

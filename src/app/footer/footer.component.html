@@ -1,10 +1,25 @@
 <footer>
   <div class="footer" fxLayout="row">
+    <div fxLayout="column">
+      <div
+        class="logo"
+        id="logo_erasmus"
+        (click)="openUrl('https://erasmus-plus.ec.europa.eu')"
+      ></div>
+      <div fxLayout="row">
+        <div
+          class="logo"
+          id="logo_diarc"
+          (click)="openUrl('https://diarc.org')"
+        ></div>
+      </div>
+    </div>
     <div
       class="logo"
-      id="logo_diarc"
-      (click)="openUrl('https://diarc.org')"
+      id="logo_mcc"
+      (click)="openUrl('https://www.mc-celje.si')"
     ></div>
+
     <div
       class="logo"
       id="logo_tmc"
