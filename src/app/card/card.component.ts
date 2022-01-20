@@ -37,10 +37,21 @@ export class CardComponent implements OnInit {
   }
 
   dragMove(event: any, card: Card) {
-    const elStyle = event.source.element.nativeElement.style;
+    const el = event.source.element.nativeElement;
     this.dragEvent = true;
+    this.hopCardUp(el.style);
+  }
+
+  hopCardUp(elStyle: any) {
     this.lastZindex += 10;
     elStyle.zIndex = this.lastZindex;
+  }
+
+  magnify(event: any, card: Card) {
+    const el = <HTMLInputElement>document.getElementById("card" + card.id);
+
+    this.hopCardUp(el.style);
+    this.gs.magnify(event, card);
   }
 
   showAllCards(deck: Deck) {

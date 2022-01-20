@@ -42,6 +42,7 @@
         (cdkDragStarted)="dragMove($event, card)"
         (cdkDragEnded)="dragEnd($event, card)"
         [style.position]="card.position ? 'absolute' : ''"
+        [id]="'card' + card.id"
       >
         <div
           [ngClass]="card.magnified ? 'magnify' : ''"
@@ -52,16 +53,16 @@
           "
         >
           <div class="cardButtons" *ngIf="!gs.selectionMode && !dragEvent">
-            <mat-icon
+            <!-- <mat-icon
               [style.color]="gs.getIconColor(card)"
               class="flipCard left"
               (click)="gs.flipCard(card); $event.stopPropagation()"
               >360</mat-icon
-            >
+            > -->
             <mat-icon
               class="middle material-icons"
               [style.color]="gs.getIconColor(card)"
-              (click)="gs.magnify($event, card); $event.stopPropagation()"
+              (click)="magnify($event, card); $event.stopPropagation()"
             >
               image_search
             </mat-icon>
