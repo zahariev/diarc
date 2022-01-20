@@ -48,7 +48,7 @@ export class GameService {
 
       if (decksArr)
         for (let i = 0; i < decksArr.length; i++) {
-          this.decks[i].backSide = decksArr[i]?.backSide;
+          if (this.decks[i]) this.decks[i].backSide = decksArr[i]?.backSide;
         }
     }
 
