@@ -57,10 +57,10 @@
               [style.color]="gs.getIconColor(card)"
               class="flipCard left"
               (click)="gs.flipCard(card); $event.stopPropagation()"
-              >360</mat-icon
-            > -->
+              >360
+              </mat-icon> -->
             <mat-icon
-              class="middle material-icons"
+              class="magnifyIcon left material-icons"
               [style.color]="gs.getIconColor(card)"
               (click)="magnify($event, card); $event.stopPropagation()"
             >
@@ -75,12 +75,12 @@
           </div>
 
           <div class="cardButtons" *ngIf="gs.selectionMode">
-            <mat-icon
+            <!-- <mat-icon
               [style.color]="gs.getIconColor(card)"
               class="flipCard left"
               (click)="gs.flipCard(card); $event.stopPropagation()"
-              >360</mat-icon
-            >
+              >360
+            </mat-icon> -->
           </div>
           <div
             *ngIf="isMobileDevice() && !gs.selectionMode"

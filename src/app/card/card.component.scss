@@ -112,6 +112,13 @@
   left: 10px;
 }
 
+.magnifyIcon {
+  position: relative;
+  z-index: 999999;
+  top: 10px;
+  left: 10px;
+}
+
 .flipIcon {
   position: relative;
   z-index: 999999;
@@ -169,6 +176,7 @@
 .card:hover .delete,
 .card:hover .middle,
 .card:hover .flipIcon,
+.card:hover .magnifyIcon,
 .card:hover .flipCard,
 .deck:hover .showDeckIcon {
   display: block;
